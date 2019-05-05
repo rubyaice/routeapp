@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Rutas ionic 4
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+ <ion-item>
+   <ion-input placeholder="Parametro" [(ngModel)] = "valor"></ion-input>
+ </ion-item>
+ <br>
+ <ion-button expand="full" [routerLink]="['/segunda', valor]">Push con routerLink</ion-button>
+
+ <br>
+ <ion-button expand="full" (click)="pushSegunda()">Push con Angular function</ion-button>
+
+ <!----<br>
+ <ion-button expand="full" (click)="pushSegundaNavCtrl()">Push con NavCtrl</ion-button>-->
+</ion-content>
